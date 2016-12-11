@@ -5,6 +5,7 @@ int sobad;
 int adjacentSquares;
 int placeholder = 2;
 int MorePlaceHolding = 10;
+float random;
 int grid1[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 int grid2[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 int grid3[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -181,5 +182,13 @@ void keyPressed(){
   }
   if(key == 44 && MorePlaceHolding > 1){
     MorePlaceHolding -= 1;
+  }
+  if(key == 114){
+    for(int n = 0; n < 21;n++){
+      for(int e = 0; e < 21; e++){
+        random = random(1);
+        grid[n][e] = round(random);
+      }
+    }  
   }
 }
