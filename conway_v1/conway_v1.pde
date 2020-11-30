@@ -152,7 +152,7 @@ void draw(){
       line(0, i * 50, 1000, i * 50);
     }
     
-    fill(255,255,0);
+    fill(170,230,0);
     for(int i = 0; i<20;i++){
       for(int y = 0; y<20; y++){
         if(grid[i][y] == 1){
